@@ -106,7 +106,7 @@
                             left: '60%'
                         }, 1000, 'easeOutExpo');
                         $('.section4').find('.img11').delay(200).animate({
-                            right: '64%'
+                            right: '54%'
                         }, 1000, 'easeOutExpo');
                         $('.section4').find('.img12').delay(200).animate({
                             right: '68%'
@@ -302,7 +302,7 @@
 <body>
 <div id="dowebok">
     <div class="section section1">
-        <div class="dz">WOULE YOU LIKE TO<br>
+        <div class="dz">WOULD YOU LIKE TO<br>
             JOIN EFA
         </div>
     </div>

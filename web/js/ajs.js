@@ -67,7 +67,7 @@ $(document).ready(function () {
                     left: '60%'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.img11').delay(200).animate({
-                    right: '64%'
+                    right: '54%'
                 }, 1000, 'easeOutExpo');
                 $('.section4').find('.img12').delay(200).animate({
                     right: '68%'
