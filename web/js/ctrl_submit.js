@@ -31,8 +31,7 @@ $(document).ready(function () {
     //按钮点击事件
     $(".sub_bt").click(function () {
 
-        alert("抱歉，报名尚未开始！");
-        /*var sname = $(".sname").val();
+        var sname = $(".sname").val();
         var sno = $(".sno").val();
         var sclass = $(".sclass").val();
         var stel = $(".stel").val();
@@ -74,7 +73,7 @@ $(document).ready(function () {
             }
         } else {
             alert("请将信息填写完整！");
-        }*/
+        }
     })
 
 });

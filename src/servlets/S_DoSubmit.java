@@ -31,7 +31,7 @@ public class S_DoSubmit extends HttpServlet {
 
         MemberDao memberDao = new MemberDao();
         //判断这个人是不是已经报名过了
-        if (memberDao.isSnoExists(request.getParameter("sno"))){
+        /*if (memberDao.isSnoExists(request.getParameter("sno"))){
             PrintWriter out = response.getWriter();
             Map map = new HashMap();
             map.put("success", Boolean.FALSE);
@@ -39,16 +39,21 @@ public class S_DoSubmit extends HttpServlet {
             JSONObject json = JSONObject.fromObject(map);
             out.print(json);
             out.close();
-        } else {
-            memberDao.addMember(s);
-            PrintWriter out = response.getWriter();
-            Map map = new HashMap();
-            map.put("success", Boolean.TRUE);
-            map.put("msg", "报名成功！");
-            JSONObject json = JSONObject.fromObject(map);
-            out.print(json);
-            out.close();
-        }
+        } else {*/
+
+        /*
+        * 需求更改，在此处可以直接将学生加入，不需要判断学号是否存在
+        * 即一个人可以多次报名：最终以最后一次报名为准！
+        * */
+        memberDao.addMember(s);
+        PrintWriter out = response.getWriter();
+        Map map = new HashMap();
+        map.put("success", Boolean.TRUE);
+        map.put("msg", "报名成功！");
+        JSONObject json = JSONObject.fromObject(map);
+        out.print(json);
+        out.close();
+        /* }*/
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
