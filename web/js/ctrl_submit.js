@@ -2,7 +2,7 @@
 //主要进行一些表单验证，和进行数据提交
 $(document).ready(function () {
 
-    var reg_tel = /^[1][3,4,5,7,8][0-9]{9}$/;
+    var reg_tel = /^[1][3,4,5,6,7,8,9][0-9]{9}$/;
     var reg_num = /^[0-9]*$/;
 
     //检测手机号是否非法
@@ -47,7 +47,7 @@ $(document).ready(function () {
             if (reg_tel.test(stel) && reg_num.test(sno) && reg_num.test(sqq)){
                 //向Servlet提交信息
                 $.ajax({
-                    url: "/S_DoSubmit",
+                    url: "/S_do_Submit",
                     type: "post",
                     async: false, //同步
                     data: {

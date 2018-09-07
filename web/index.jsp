@@ -1102,7 +1102,7 @@
         <img src="images/about_signup.png"/>
         <div class="div">
             <div class="div_con">
-                <form action="/do_submit" method="post">
+                <form action="/S_doSubmit" method="post">
                     姓名:<input type="text" class="sname"/>
                     学号:<input type="text" class="sno"/>
                     班级:<input type="text" class="sclass"/><br><br>
