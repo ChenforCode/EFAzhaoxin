@@ -78,6 +78,6 @@ public class S_do_Submit extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+        request.getRequestDispatcher("/fq.jsp").forward(request, response);
     }
 }
